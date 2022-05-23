@@ -126,7 +126,16 @@ body {
 
 .main__content h1 { 
     font-size: 4rem;
-    color: white;
+    color: #adb5bd;
+}
+
+.main__content p {
+    color: #adb5bd;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    letter-spacing: .1rem;
+    padding-bottom: 5rem;
+    font-weight: 700;
 }
 
 #main__img {
@@ -154,6 +163,18 @@ body {
         font-size: 2.5rem;
         margin-top: 5rem;
     }
+
+    .main__content p {
+        margin-top: 1rem;
+        font-size: 1.5rem;
+        padding-bottom: 6rem;
+    }
+    
+    #main__img {
+        height: 80%;
+        width: 80%;
+        margin-left: 5rem;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -161,4 +182,37 @@ body {
         font-size: 2rem;
         margin-top: 5rem;
     }
+
+    .main__content p {
+        margin-top: 2rem;
+        font-size: 1.5rem;
+        padding-bottom: 5.75rem;
+    }
+
+    #main__img {
+        height: 80%;
+        width: 80%;
+        margin-left: 2.75rem;
+    }
+}
+
+.custom-shape-divider-bottom-1653267808 {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1653267808 svg {
+    position: relative;
+    display: block;
+    width: calc(197% + 1.3px);
+    height: 112px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1653267808 .shape-fill {
+    fill: #FFFFFF;
 }
