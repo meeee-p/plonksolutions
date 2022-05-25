@@ -1,58 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="styles.css" />
-    <script src="script.js" defer></script>
+        <link rel="stylesheet" href="styles.css" />
+        <script src="script.js" defer></script>
 
-    <title>Plonk Solutions</title>
-  </head>
+        <title>Plonk Solutions</title>
+    </head>
 
-  <!-- Navbar -->
-  <body class="background-image">
-    <nav class="navbar">
-      <img src="./assets/plonkp.svg" class="brand-title" />
-      <a href="#" class="toggle-button">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </a>
-      <div class="navbar-links">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-  </body>
+    <!-- Navbar -->
+    <body class="background-image">
+        <nav class="navbar">
+            <img src="./assets/plonkp.svg" class="brand-title" />
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <div class="navbar-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </body>
 
-  <!-- Body For Contact -->
-  <div class="contact">
-    <h1 class="contact-head">Contact Us</h1>
-    <div class="margin">
-      <div class="inputGroup">
-        <input type="text" required />
-        <span class="inputBar"></span>
-        <label>Name</label>
-      </div>
+    <!-- Body For Contact -->
+    <div class="contact">
+        <h1 class="contact-head">Contact Us</h1>
+        <div class="margin">
+            <form action="https://formspree.io/f/mgeddawp" method="POST">
+                <div class="inputGroup">
+                    <input type="text" name="name" required />
+                    <span class="inputBar"></span>
+                    <label>Name</label>
+                </div>
 
-      <div class="inputGroup">
-        <input type="text" required />
-        <span class="inputBar"></span>
-        <label>Email</label>
-      </div>
+                <div class="inputGroup">
+                    <input type="email" name="email" required />
+                    <span class="inputBar"></span>
+                    <label>Email</label>
+                </div>
 
-      <div class="inputGroup">
-        <textarea type="textarea" required></textarea>
-        <span class="inputBar"></span>
-        <label>Message</label>
-      </div>
+                <div class="inputGroup">
+                    <textarea type="textarea" name="message" required></textarea>
+                    <span class="inputBar"></span>
+                    <label>Message</label>
+                </div>
 
-      <button>Send</button>
+                <button type="submit">Send</button>
+            </form>
+        </div>
     </div>
-  </div>
 </html>
